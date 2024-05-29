@@ -1,0 +1,39 @@
+type Query {
+#    bookById(id: ID): Book
+#    userById(id: ID): User
+    allUsers: [User]
+}
+
+type Book {
+    id: ID
+    name: String
+    pageCount: Int
+    author: Author
+}
+
+type Author {
+    id: ID
+    firstName: String
+    lastName: String
+}
+
+type User {
+    userId: ID
+    name: String
+#    login:String
+#    password:String,
+#    blocked: Boolean,
+#    dateBlocked: String,
+#    dateAdd: String,
+#    typeId: Int,
+#    phoneNumber: String,
+#    failedLogin,: Int
+#    email: String,
+#    passwordExpire: String,
+#    dateChangePassword: String
+}
+
+
+
+
+
